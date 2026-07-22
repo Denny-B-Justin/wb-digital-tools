@@ -1,7 +1,7 @@
 """
 utils.py
 --------
-Reusable component builders for the PIM-PAM Digital Workspace app.
+Reusable component builders for the Digital Workspace app.
 Keeping these out of app.py keeps the layout/callback file readable.
 """
 
@@ -11,7 +11,7 @@ from constants import (
     TOOLS,
     PIA_COUNTRIES,
     pia_url_for,
-    IFRAME_HEIGHT,
+    IFRAME_ASPECT_RATIO,
 )
 
 
@@ -103,6 +103,10 @@ def embedded_frame(url, key):
     X-Frame-Options headers that block embedding entirely; the fallback
     link is provided so the tool is always reachable even if the frame
     itself renders blank.
+
+    The iframe sits inside a fixed-aspect-ratio container (instead of a
+    flat pixel height) so it scales cleanly at any screen width without
+    cropping the bottom of the embedded dashboard.
     """
     return html.Div(
         [
@@ -116,11 +120,10 @@ def embedded_frame(url, key):
                 ),
                 className="frame-toolbar",
             ),
-            html.Iframe(
-                src=url,
-                key=key,
-                className="tool-iframe",
-                style={"height": IFRAME_HEIGHT},
+            html.Div(
+                html.Iframe(src=url, key=key, className="tool-iframe"),
+                className="tool-iframe-aspect",
+                style={"aspectRatio": IFRAME_ASPECT_RATIO},
             ),
         ],
         className="frame-wrapper",

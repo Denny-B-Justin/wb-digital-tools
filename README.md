@@ -1,6 +1,6 @@
-# PIM-PAM Digital Workspace
+# Digital Workspace
 
-A single Dash app that aggregates three World Bank PIM-PAM tools \u2014 **PIA**,
+A single Dash app that aggregates three World Bank tools \u2014 **PIA**,
 **GoAT**, and the **Country Benchmarking Dashboard (CBD)** \u2014 behind one
 "workbench," so a user can move between them without separate tabs or links.
 
@@ -11,7 +11,7 @@ A single Dash app that aggregates three World Bank PIM-PAM tools \u2014 **PIA**,
 | `app.py` | Layout + callbacks. Run this. |
 | `constants.py` | All tool/country data, URLs, and color tokens. Edit this to add a tool or a PIA country. |
 | `utils.py` | Component builders (cards, tabs, iframe wrapper) used by `app.py`. |
-| `assets/style.css` | Dark theme, loosely inspired by the PIM-PAM marketing site's palette (`#0A0E1A` background, indigo/teal/green/orange accents, Fira Sans + Inter). No logos are used anywhere. |
+| `assets/style.css` | Dark theme, loosely inspired by the marketing site's palette (`#0A0E1A` background, indigo/teal/green/orange accents, Fira Sans + Inter). No logos are used anywhere. |
 
 ## Running it
 

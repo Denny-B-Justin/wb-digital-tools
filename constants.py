@@ -1,13 +1,13 @@
 """
 constants.py
 ------------
-All static content and configuration for the PIM-PAM Digital Workspace app.
+All static content and configuration for the Digital Workspace app.
 Keeping this separate from app.py means new tools / countries can be added
 here without touching any layout or callback logic.
 """
 
 # ---------------------------------------------------------------------------
-# Brand / design tokens (mirrors the PIM-PAM marketing site palette so the
+# Brand / design tokens (mirrors the Digital Workspace marketing site palette so the
 # workspace feels like a natural extension of it, without reusing its logo
 # or copy).
 # ---------------------------------------------------------------------------
@@ -23,21 +23,17 @@ COLORS = {
     "accent_4": "#d9560f",   # orange (deepened for contrast on white)
 }
 
-APP_TITLE = "PIM-PAM Digital Workspace"
+APP_TITLE = "Digital Workspace"
 APP_TAGLINE = "One workspace for the Public Infrastructure & Asset Management toolkit."
 
 MISSION_STATEMENT = (
-    ""
+    "World Bank builds digital tools for governments to plan, finance, and manage public "
+    "infrastructure more effectively. Historically these tools have lived on separate "
+    "domains, each requiring its own link, login screen, and browser tab. This workspace "
+    "brings three of them together in one place \u2014 so an analyst comparing a country's "
+    "governance operations, its infrastructure access gaps, and its benchmarking scores "
+    "can do it in one session, without losing their place."
 )
-
-# MISSION_STATEMENT = (
-#     "PIM-PAM builds digital tools for governments to plan, finance, and manage public "
-#     "infrastructure more effectively. Historically these tools have lived on separate "
-#     "domains, each requiring its own link, login screen, and browser tab. This workspace "
-#     "brings three of them together in one place \u2014 so an analyst comparing a country's "
-#     "governance operations, its infrastructure access gaps, and its benchmarking scores "
-#     "can do it in one session, without losing their place."
-# )
 
 # ---------------------------------------------------------------------------
 # PIA \u2014 Public Infrastructure Access tool
@@ -67,7 +63,7 @@ def pia_url_for(country_id: str) -> str:
 
 # ---------------------------------------------------------------------------
 # The three tools that make up the workspace. "family" mirrors the grouping
-# used on the PIM-PAM marketing site (geospatial planning / analytics & AI /
+# used on the marketing site (geospatial planning / analytics & AI /
 # data benchmarking) purely as an organizing label, not a UI dependency.
 # ---------------------------------------------------------------------------
 TOOLS = [
@@ -140,4 +136,8 @@ TOOLS = [
 TOOLS_BY_ID = {t["id"]: t for t in TOOLS}
 DEFAULT_TOOL_ID = "pia"
 
-IFRAME_HEIGHT = "780px"
+# Embedded tools render inside a fixed-aspect-ratio box rather than a flat
+# pixel height, so they resize cleanly across screen widths. These
+# dashboards are landscape (map + side panels), so a widescreen 16:9 ratio
+# is used -- change this one value to reshape every embed at once.
+IFRAME_ASPECT_RATIO = "16 / 9"

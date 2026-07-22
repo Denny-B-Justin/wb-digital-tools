@@ -394,8 +394,17 @@ p { line-height: 1.65; }
 
 .frame-fallback-link:hover { text-decoration: underline; }
 
-.tool-iframe {
+.tool-iframe-aspect {
+  position: relative;
   width: 100%;
+  /* aspect-ratio is set inline from constants.py (IFRAME_ASPECT_RATIO) */
+}
+
+.tool-iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   border: none;
   display: block;
   background: #ffffff;

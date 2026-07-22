@@ -1,8 +1,8 @@
 """
 app.py
 ------
-PIM-PAM Digital Workspace \u2014 a single Dash app that aggregates three
-World Bank PIM-PAM tools (PIA, GoAT, CBD) behind one workbench, so a user
+Digital Workspace \u2014 a single Dash app that aggregates three
+World Bank tools (PIA, GoAT, CBD) behind one workbench, so a user
 never has to juggle separate tabs/logins for tools built at different times
 on different stacks.
 
@@ -90,11 +90,11 @@ def build_layout():
                     [
                         html.Div(
                             [
-                                eyebrow("The toolkit"),
-                                html.H2("Pick a tool to open it below", className="section-heading"),
+                                # eyebrow("Global Digital Demonstrations Support Tools"),
+                                html.H2("Global Digital Demonstrations Support Tools", className="section-heading"),
                                 html.P(
-                                    "Each card opens the tool directly in the workbench \u2014 "
-                                    "no separate tab, no separate login.",
+                                    "Suite of data-driven digital tools designed to improve public investment and asset management.",
+                                    
                                     className="section-subheading",
                                 ),
                             ],
@@ -145,14 +145,14 @@ def build_layout():
                             "the tools can be used together too.",
                             className="about-text",
                         ),
-                        html.P(
-                            "Tool embeds are served live from their original World Bank / "
-                            "Posit Connect deployments \u2014 this workspace is a frame around "
-                            "them, not a copy of them. If a browser blocks an embed for "
-                            "security reasons, use the \u201cOpen full window\u201d link that "
-                            "appears above it.",
-                            className="about-note",
-                        ),
+                        # html.P(
+                        #     "Tool embeds are served live from their original World Bank / "
+                        #     "Posit Connect deployments \u2014 this workspace is a frame around "
+                        #     "them, not a copy of them. If a browser blocks an embed for "
+                        #     "security reasons, use the \u201cOpen full window\u201d link that "
+                        #     "appears above it.",
+                        #     className="about-note",
+                        # ),
                     ],
                     className="section-inner about-inner",
                 ),
@@ -162,7 +162,7 @@ def build_layout():
 
             html.Footer(
                 html.Div(
-                    "PIM-PAM Digital Workspace \u00b7 an internal aggregator for PIA, GoAT, "
+                    "Digital Workspace \u00b7 an internal aggregator for PIA, GoAT, "
                     "and the Country Benchmarking Dashboard.",
                     className="footer-inner",
                 ),
