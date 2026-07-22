@@ -162,8 +162,7 @@ def build_layout():
 
             html.Footer(
                 html.Div(
-                    "Digital Workspace \u00b7 an internal aggregator for PIA, GoAT, "
-                    "and the Country Benchmarking Dashboard.",
+                    "Digital Workspace \u00b7 The World Bank \u00b7 Contact: ksingh12@worldbank.org",
                     className="footer-inner",
                 ),
                 className="footer",

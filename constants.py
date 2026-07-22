@@ -75,15 +75,15 @@ TOOLS = [
         "summary": "Optimize where new roads, bridges, and health facilities go to widen access.",
         "description": (
             "PIA is a geospatial optimizer that helps governments decide where to place new "
-            "infrastructure \u2014 clinics, roads, bridges \u2014 to maximize how many people gain "
+            "hospital \u2014 to maximize how many people gain "
             "reasonable access to it. It runs a maximum covering location model over hexagonal "
             "grids of population and travel-time data, then lets planners explore the "
             "recommended sites on an interactive map."
         ),
         "bullets": [
             "Deployed separately for five countries: Zambia, Malawi, Serbia, Nepal, and Uzbekistan.",
-            "Built on H3 hexagonal indexing, population rasters, and OpenStreetMap road networks.",
-            "Uses a greedy approximation algorithm with a proven (1\u22121/e) coverage guarantee.",
+            "Built on H3 hexagonal indexing, population rasters, and OpenStreetMap data.",
+            "PIA gives planners and policymakers an interactive way to explore infrastructure gaps on the ground",
         ],
         "accent": COLORS["accent_2"],
         "url": PIA_BASE_URL,
@@ -96,15 +96,15 @@ TOOLS = [
         "family": "Analytics & AI",
         "summary": "Search World Bank lending operations for PIM, PAM, and SOE-related themes.",
         "description": (
-            "GoAT lets analysts search across the World Bank's Development Policy Operations, "
-            "Investment Project Financing, and Program-for-Results lending for language related "
+            "GoAT lets analysts search across the World Bank's Development Policy Operations (DPO), "
+            "Investment Project Financing (IPF), and Program-for-Results (PforR) lending for language related "
             "to public investment management, public asset management, and state-owned "
-            "enterprises \u2014 across more than ten thousand projects."
+            "enterprises."
         ),
         "bullets": [
-            "Keyword hierarchies map raw project text to thematic areas (PIM / PAM / SOE).",
-            "Sunburst and stacked-bar views summarize how themes trend across regions and time.",
-            "Results are exportable to CSV for further offline analysis.",
+            "Enables keyword-driven searches across the World Bank's core operation types (DPO, IPF, and PforR).",
+            "Matches custom thematic keyword hierarchies against project objectives, prior actions, and indicators.",
+            "Real-time filters to generate live interactive charts and download on-demand World Bank project data.",
         ],
         "accent": COLORS["accent_3"],
         "url": "https://datanalytics.worldbank.org/content/5e009cdd-7b07-4567-8f45-eb3a3f476abc/",
@@ -120,12 +120,12 @@ TOOLS = [
             "CBD benchmarks a country's public financial management for climate action against "
             "its peers, using indices such as the GovTech Maturity Index, the Climate Change "
             "Institutional Assessment, and infrastructure efficiency scores, all rendered as "
-            "interactive choropleth maps."
+            "interactive maps."
         ),
         "bullets": [
             "Blends global indices (GTMI, PEFA) with regional ECA-specific datasets (CCIA, PIIAG).",
-            "Every indicator traces back to its source \u2014 World Bank, IMF, or WBG.",
-            "Built as a Dash app on Unity Catalog Delta tables for governments and finance ministries.",
+            "Integrates metrics from established methodologies developed by institutions like the World Bank and the IMF.",
+            "Helps to analyze regional mappings and review specific country-level indicators across various benchmarks.",
         ],
         "accent": COLORS["accent_4"],
         "url": "https://datanalytics.worldbank.org/content/4522077e-7857-468c-ab5a-366588a11dd0/",
