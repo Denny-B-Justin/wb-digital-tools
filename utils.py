@@ -15,11 +15,6 @@ from constants import (
 )
 
 
-def grid_overlay():
-    """A faint background grid, echoing the marketing site's hero texture."""
-    return html.Div(className="grid-overlay", **{"aria-hidden": "true"})
-
-
 def eyebrow(text, extra_class=""):
     return html.P(text, className=f"eyebrow {extra_class}".strip())
 

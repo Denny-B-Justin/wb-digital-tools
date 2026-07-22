@@ -23,7 +23,6 @@ from constants import (
     PIA_DEFAULT_COUNTRY,
 )
 from utils import (
-    grid_overlay,
     eyebrow,
     hero_tool_card,
     workbench_tabs,
@@ -65,28 +64,25 @@ def build_layout():
             ),
 
             # ---- hero ----
-            html.Section(
-                [
-                    grid_overlay(),
-                    html.Div(
-                        [
-                            eyebrow("Digital Workspace Aggregator"),
-                            html.H1(
-                                [
-                                    "Three tools. Five countries. ",
-                                    html.Span("One workspace.", className="accent"),
-                                ],
-                                className="hero-heading",
-                            ),
-                            html.P(APP_TAGLINE, className="hero-tagline"),
-                            html.P(MISSION_STATEMENT, className="hero-mission"),
-                        ],
-                        className="hero-inner",
-                        id="overview",
-                    ),
-                ],
-                className="hero-section",
-            ),
+            # html.Section(
+            #     html.Div(
+            #         [
+            #             eyebrow("Digital Workspace Aggregator"),
+            #             html.H1(
+            #                 [
+            #                     "Three tools. Five countries. ",
+            #                     html.Span("One workspace.", className="accent"),
+            #                 ],
+            #                 className="hero-heading",
+            #             ),
+            #             html.P(APP_TAGLINE, className="hero-tagline"),
+            #             html.P(MISSION_STATEMENT, className="hero-mission"),
+            #         ],
+            #         className="hero-inner",
+            #         id="overview",
+            #     ),
+            #     className="hero-section",
+            # ),
 
             # ---- tool overview strip ----
             html.Section(

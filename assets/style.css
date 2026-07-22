@@ -95,16 +95,6 @@ p { line-height: 1.65; }
   border-bottom: 1px solid var(--border);
 }
 
-.grid-overlay {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background-image:
-    linear-gradient(rgba(20,25,43,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(20,25,43,0.04) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-
 .hero-inner {
   position: relative;
   max-width: 860px;
