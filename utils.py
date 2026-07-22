@@ -112,7 +112,7 @@ def embedded_frame(url, key):
         [
             html.Div(
                 [
-                    html.Span("Live embed", className="frame-status-dot-label"),
+                    # html.Span("Live embed", className="frame-status-dot-label"),
                     html.A(
                         "Open full window \u2197",
                         href=url,

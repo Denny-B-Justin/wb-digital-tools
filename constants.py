@@ -12,15 +12,15 @@ here without touching any layout or callback logic.
 # or copy).
 # ---------------------------------------------------------------------------
 COLORS = {
-    "bg": "#0A0E1A",
-    "surface": "#121829",
-    "surface_2": "#1A2237",
-    "text": "#E6EAF2",
-    "muted": "#8A93A8",
+    "bg": "#FFFFFF",
+    "surface": "#F7F8FB",
+    "surface_2": "#FFFFFF",
+    "text": "#14192B",
+    "muted": "#5B6478",
     "accent_1": "#4345aa",   # indigo
-    "accent_2": "#37b37f",   # green
-    "accent_3": "#64cbd6",   # teal
-    "accent_4": "#f26b23",   # orange
+    "accent_2": "#1f9d67",   # green (deepened for contrast on white)
+    "accent_3": "#1a92a1",   # teal (deepened for contrast on white)
+    "accent_4": "#d9560f",   # orange (deepened for contrast on white)
 }
 
 APP_TITLE = "PIM-PAM Digital Workspace"
