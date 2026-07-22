@@ -25,14 +25,15 @@ def eyebrow(text, extra_class=""):
 
 
 def tool_badge(tool):
-    """A logo-free acronym badge used instead of any imagery/branding."""
+    """A logo-free acronym label used instead of any imagery/branding.
+    Flat text with a colored underline -- no box, no gradient.
+    """
     return html.Div(
         tool["acronym"],
         className="tool-badge",
         style={
-            "background": f"linear-gradient(135deg, {tool['accent']}22, {tool['accent']}0d)",
             "color": tool["accent"],
-            "borderColor": f"{tool['accent']}55",
+            "borderBottomColor": tool["accent"],
         },
     )
 
@@ -111,16 +112,13 @@ def embedded_frame(url, key):
     return html.Div(
         [
             html.Div(
-                [
-                    # html.Span("Live embed", className="frame-status-dot-label"),
-                    html.A(
-                        "Open full window \u2197",
-                        href=url,
-                        target="_blank",
-                        rel="noopener noreferrer",
-                        className="frame-fallback-link",
-                    ),
-                ],
+                html.A(
+                    "Open full window \u2197",
+                    href=url,
+                    target="_blank",
+                    rel="noopener noreferrer",
+                    className="frame-fallback-link",
+                ),
                 className="frame-toolbar",
             ),
             html.Iframe(

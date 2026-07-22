@@ -74,7 +74,7 @@ def build_layout():
                             html.H1(
                                 [
                                     "Three tools. Five countries. ",
-                                    html.Span("One workspace.", className="gradient-text"),
+                                    html.Span("One workspace.", className="accent"),
                                 ],
                                 className="hero-heading",
                             ),

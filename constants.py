@@ -27,13 +27,17 @@ APP_TITLE = "PIM-PAM Digital Workspace"
 APP_TAGLINE = "One workspace for the Public Infrastructure & Asset Management toolkit."
 
 MISSION_STATEMENT = (
-    "PIM-PAM builds digital tools for governments to plan, finance, and manage public "
-    "infrastructure more effectively. Historically these tools have lived on separate "
-    "domains, each requiring its own link, login screen, and browser tab. This workspace "
-    "brings three of them together in one place \u2014 so an analyst comparing a country's "
-    "governance operations, its infrastructure access gaps, and its benchmarking scores "
-    "can do it in one session, without losing their place."
+    ""
 )
+
+# MISSION_STATEMENT = (
+#     "PIM-PAM builds digital tools for governments to plan, finance, and manage public "
+#     "infrastructure more effectively. Historically these tools have lived on separate "
+#     "domains, each requiring its own link, login screen, and browser tab. This workspace "
+#     "brings three of them together in one place \u2014 so an analyst comparing a country's "
+#     "governance operations, its infrastructure access gaps, and its benchmarking scores "
+#     "can do it in one session, without losing their place."
+# )
 
 # ---------------------------------------------------------------------------
 # PIA \u2014 Public Infrastructure Access tool
