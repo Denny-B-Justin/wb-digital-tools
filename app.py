@@ -93,7 +93,7 @@ def build_layout():
                                 # eyebrow("Global Digital Demonstrations Support Tools"),
                                 html.H2("Global Digital Demonstrations Support Tools", className="section-heading"),
                                 html.P(
-                                    "Suite of data-driven digital tools designed to improve public investment and asset management.",
+                                    "Suite of data-driven tools designed to improve public investment and asset management.",
                                     
                                     className="section-subheading",
                                 ),
@@ -117,7 +117,7 @@ def build_layout():
                         html.Div(
                             [
                                 eyebrow("The workbench"),
-                                html.H2("Everything opens right here", className="section-heading"),
+                                html.H2("Data Analytics and Visualization Platforms", className="section-heading"),
                             ],
                             className="section-heading-block",
                         ),

@@ -23,7 +23,7 @@ COLORS = {
     "accent_4": "#d9560f",   # orange (deepened for contrast on white)
 }
 
-APP_TITLE = "Digital Workspace"
+APP_TITLE = "World Bank Digital Workspace"
 APP_TAGLINE = "One workspace for the Public Infrastructure & Asset Management toolkit."
 
 MISSION_STATEMENT = (

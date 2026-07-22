@@ -73,7 +73,7 @@ def workbench_tabs(active_tool_id):
 def country_chip(country, is_active):
     return html.Button(
         [
-            html.Span(country["flag"], className="chip-flag"),
+            # html.Span(country["flag"], className="chip-flag"),
             html.Span(country["name"], className="chip-name"),
         ],
         id={"type": "country-select", "index": country["id"]},
