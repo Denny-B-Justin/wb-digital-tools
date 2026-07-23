@@ -285,6 +285,29 @@ def build_layout():
     )
 
 
+
+# FAVICON_URL = app.get_asset_url("pia_favicon.ico")
+
+# app.index_string = """
+# <!DOCTYPE html>
+# <html>
+#     <head>
+#         {%metas%}
+#         <title>{%title%}</title>
+#         <link rel="icon" type="image/x-icon" href=\"""" + FAVICON_URL + """\">
+#         {%css%}
+#     </head>
+#     <body>
+#         {%app_entry%}
+#         <footer>
+#             {%config%}
+#             {%scripts%}
+#             {%renderer%}
+#         </footer>
+#     </body>
+# </html>
+# """
+
 app.layout = build_layout
 
 
