@@ -91,7 +91,7 @@ def build_layout():
                         html.Div(
                             [
                                 # eyebrow("Global Digital Demonstrations Support Tools"),
-                                html.H2("Global Digital Demonstrations Support Tools", className="section-heading"),
+                                html.H2("Global Scalable Digital Demonstrations Support Tools", className="section-heading"),
                                 html.P(
                                     "Suite of data-driven tools designed to improve public investment and asset management.",
                                     
@@ -136,13 +136,26 @@ def build_layout():
                     [
                         html.H2("Why one workspace?", className="section-heading"),
                         html.P(
-                            "PIA, GoAT, and the Country Benchmarking Dashboard were each "
-                            "built to answer a different question \u2014 where should new "
-                            "infrastructure go, what is the Bank's portfolio already saying "
-                            "about a theme, and how does a country compare to its peers. "
-                            "In practice those questions get asked together, in the same "
-                            "meeting, by the same analyst. This workspace exists so that "
-                            "the tools can be used together too.",
+                            [
+                                "PIA, GoAT, and the Country Benchmarking Dashboard were each "
+                                "designed to answer a different question: ",
+                                html.Strong(
+                                    "Where should new "
+                                    "infrastructure investments be prioritized? What does the "
+                                    "World Bank's operational portfolio reveal about a particular "
+                                    "theme? How does a country compare with its peers? "
+                                ),
+                                "In practice, however, these questions are rarely asked in "
+                                "isolation. They often arise in the same discussion, inform "
+                                "the same analytical process, and are addressed by the same "
+                                "teams. \n",
+                                "This workspace brings these tools together in a single "
+                                "environment, allowing users to move seamlessly from "
+                                "infrastructure needs assessment to portfolio analysis "
+                                "and country benchmarking without switching between "
+                                "platforms."
+                                
+                            ],
                             className="about-text",
                         ),
                         # html.P(
@@ -162,7 +175,7 @@ def build_layout():
 
             html.Footer(
                 html.Div(
-                    "Digital Workspace \u00b7 The World Bank \u00b7 Contact: ksingh12@worldbank.org",
+                    "PIM-PAM Digital Workspace \u00b7 The World Bank", #\u00b7 Contact: ksingh12@worldbank.org
                     className="footer-inner",
                 ),
                 className="footer",

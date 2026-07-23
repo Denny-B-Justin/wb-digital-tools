@@ -1,6 +1,6 @@
-# Digital Workspace
+# PIM-PAM Digital Workspace
 
-A single Dash app that aggregates three World Bank tools \u2014 **PIA**,
+A single Dash app that aggregates PIM-PAM World Bank tools \u2014 **PIA**,
 **GoAT**, and the **Country Benchmarking Dashboard (CBD)** \u2014 behind one
 "workbench," so a user can move between them without separate tabs or links.
 

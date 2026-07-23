@@ -146,7 +146,7 @@ p { line-height: 1.65; }
   padding: 56px 24px;
 }
 
-.section-heading-block { max-width: 640px; margin-bottom: 32px; }
+.section-heading-block { max-width: 840px; margin-bottom: 32px; }
 
 .section-heading {
   font-size: clamp(22px, 2.6vw, 27px);

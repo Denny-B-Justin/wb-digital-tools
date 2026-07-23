@@ -139,7 +139,7 @@ def tool_detail_panel(tool):
                     tool_badge(tool),
                     html.Div(
                         [
-                            html.Span(tool["family"], className="tool-family-tag"),
+                            # html.Span(tool["family"], className="tool-family-tag"),
                             html.H2(tool["name"], className="panel-title"),
                         ]
                     ),

@@ -23,7 +23,7 @@ COLORS = {
     "accent_4": "#d9560f",   # orange (deepened for contrast on white)
 }
 
-APP_TITLE = "World Bank Digital Workspace"
+APP_TITLE = "PIM-PAM Digital Workspace"
 APP_TAGLINE = "One workspace for the Public Infrastructure & Asset Management toolkit."
 
 MISSION_STATEMENT = (
@@ -72,10 +72,10 @@ TOOLS = [
         "acronym": "PIA",
         "name": "Public Infrastructure Access",
         "family": "Geospatial Planning",
-        "summary": "Optimize where new roads, bridges, and health facilities go to widen access.",
+        "summary": "Geospatial optimizer that helps governments decide where to place new hospital to maximize how many people gain access to it.",
         "description": (
             "PIA is a geospatial optimizer that helps governments decide where to place new "
-            "hospital \u2014 to maximize how many people gain "
+            "hospital to maximize how many people gain "
             "reasonable access to it. It runs a maximum covering location model over hexagonal "
             "grids of population and travel-time data, then lets planners explore the "
             "recommended sites on an interactive map."
@@ -94,17 +94,14 @@ TOOLS = [
         "acronym": "GoAT",
         "name": "Governance Operations Analytics Tool",
         "family": "Analytics & AI",
-        "summary": "Search World Bank lending operations for PIM, PAM, and SOE-related themes.",
+        "summary": "Helps rapidly identify and analyze World Bank operations across lending instruments, sectors, and thematic areas.",
         "description": (
-            "GoAT lets analysts search across the World Bank's Development Policy Operations (DPO), "
-            "Investment Project Financing (IPF), and Program-for-Results (PforR) lending for language related "
-            "to public investment management, public asset management, and state-owned "
-            "enterprises."
+            "GoAT helps analysts rapidly identify and analyze World Bank operations across lending instruments, sectors, and thematic areas."
         ),
         "bullets": [
-            "Enables keyword-driven searches across the World Bank's core operation types (DPO, IPF, and PforR).",
-            "Matches custom thematic keyword hierarchies against project objectives, prior actions, and indicators.",
-            "Real-time filters to generate live interactive charts and download on-demand World Bank project data.",
+            "Supports keyword-driven searches across Development Policy Operations (DPOs), Investment Project Financing (IPFs), and Program-for-Results (PforR) operations.",
+            "Leverages customizable thematic keyword hierarchies to match project development objectives, prior actions, and results indicators.",
+            "Offers real-time filtering, interactive dashboards, and downloadable project datasets to facilitate operational analysis and portfolio insights.",
         ],
         "accent": COLORS["accent_3"],
         "url": "https://datanalytics.worldbank.org/content/5e009cdd-7b07-4567-8f45-eb3a3f476abc/",
@@ -115,17 +112,17 @@ TOOLS = [
         "acronym": "CBD",
         "name": "Country Benchmarking Dashboard",
         "family": "Data Benchmarking",
-        "summary": "Compare countries on governance, climate, and infrastructure indices via choropleth maps.",
+        "summary": "Benchmarks a country's public financial management performance against regional and global peers.",
         "description": (
-            "CBD benchmarks a country's public financial management for climate action against "
-            "its peers, using indices such as the GovTech Maturity Index, the Climate Change "
-            "Institutional Assessment, and infrastructure efficiency scores, all rendered as "
-            "interactive maps."
+            "CBD benchmarks a country's public financial management performance against regional "
+            "and global peers using indicators such as Infrastructure Efficiency Scores, the "
+            "GovTech Maturity Index, and the Climate Change Institutional Assessment, presented "
+            "through interactive graphs and maps."
         ),
         "bullets": [
-            "Blends global indices (GTMI, PEFA) with regional ECA-specific datasets (CCIA, PIIAG).",
-            "Integrates metrics from established methodologies developed by institutions like the World Bank and the IMF.",
-            "Helps to analyze regional mappings and review specific country-level indicators across various benchmarks.",
+            "Combines global indices with regional and country-level datasets to support comparative analysis.",
+            "Integrates metrics and indicators derived from established World Bank methodologies and assessment frameworks.",
+            "Enables users to explore regional trends, benchmark countries against peers, and analyze country-level performance across multiple dimensions.",
         ],
         "accent": COLORS["accent_4"],
         "url": "https://datanalytics.worldbank.org/content/4522077e-7857-468c-ab5a-366588a11dd0/",
