@@ -63,12 +63,28 @@ p { line-height: 1.65; }
   justify-content: space-between;
 }
 
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.brand-logo {
+  display: block;
+  height: 35px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  margin-left: -140px;
+}
+
 .brand-wordmark {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.01em;
   color: var(--text);
+  line-height: 1.2;
 }
 
 .top-nav-links { display: flex; gap: 4px; }
@@ -197,12 +213,28 @@ p { line-height: 1.65; }
 }
 
 .tool-badge {
+  display: flex;
+  align-items: center;
+  min-height: 34px;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.04em;
   padding-bottom: 4px;
   border-bottom: 2px solid;
+}
+
+.tool-badge-image {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.tool-badge-logo {
+  display: block;
+  max-height: 34px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
 }
 
 .tool-family-tag {
@@ -232,6 +264,11 @@ p { line-height: 1.65; }
   font-size: 13px;
   font-weight: 600;
   color: var(--accent-3);
+  text-decoration: none;
+}
+
+.tool-card-cta:hover {
+  text-decoration: underline;
 }
 
 /* ---------------------------------------------------------------------- */

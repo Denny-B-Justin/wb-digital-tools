@@ -21,16 +21,106 @@ from constants import (
     TOOLS_BY_ID,
     DEFAULT_TOOL_ID,
     PIA_DEFAULT_COUNTRY,
+    pia_url_for,
 )
 from utils import (
     eyebrow,
-    hero_tool_card,
     workbench_tabs,
-    workbench_panel,
+    country_switcher,
+    embedded_frame,
 )
 
 app = dash.Dash(__name__, title=APP_TITLE, update_title=None)
 server = app.server
+
+
+def tool_badge(tool):
+    """Render either a tool logo asset or a text fallback acronym badge."""
+    logo = tool.get("logo")
+    if logo:
+        return html.Div(
+            html.Img(
+                src=app.get_asset_url(logo),
+                alt=tool["name"],
+                className="tool-badge-logo",
+            ),
+            className="tool-badge tool-badge-image",
+        )
+
+    return html.Div(
+        tool["acronym"],
+        className="tool-badge",
+        style={
+            "color": tool["accent"],
+            "borderBottomColor": tool["accent"],
+        },
+    )
+
+
+def hero_tool_card(tool):
+    """One of the three top-level cards in the hero's tool overview strip."""
+    return html.Button(
+        [
+            html.Div(
+                [
+                    tool_badge(tool),
+                    html.Span(tool["family"], className="tool-family-tag"),
+                ],
+                className="tool-card-top",
+            ),
+            html.H3(tool["name"], className="tool-card-name"),
+            html.P(tool["summary"], className="tool-card-summary"),
+            html.A(
+                "Open in workspace \u2192",
+                href=tool["url"],
+                target="_blank",
+                rel="noopener noreferrer",
+                className="tool-card-cta",
+            ),
+        ],
+        id={"type": "tool-select", "index": tool["id"]},
+        n_clicks=0,
+        className="tool-card",
+    )
+
+
+def tool_detail_panel(tool):
+    """Description block shown above the embed for the active tool."""
+    return html.Div(
+        [
+            html.Div(
+                [
+                    tool_badge(tool),
+                    html.Div(
+                        [
+                            html.H2(tool["name"], className="panel-title"),
+                        ]
+                    ),
+                ],
+                className="panel-header",
+            ),
+            html.P(tool["description"], className="panel-description"),
+            html.Ul(
+                [html.Li(b) for b in tool["bullets"]],
+                className="panel-bullets",
+            ),
+        ],
+        className="panel-detail",
+    )
+
+
+def workbench_panel(active_tool_id, active_country_id, tools_by_id):
+    tool = tools_by_id[active_tool_id]
+    children = [tool_detail_panel(tool)]
+
+    if tool["kind"] == "pia":
+        children.append(country_switcher(active_country_id))
+        url = pia_url_for(active_country_id)
+        children.append(embedded_frame(url, key=f"pia-{active_country_id}"))
+    else:
+        children.append(embedded_frame(tool["url"], key=tool["id"]))
+
+    return children
 
 
 # ---------------------------------------------------------------------------
@@ -48,7 +138,17 @@ def build_layout():
             html.Header(
                 html.Div(
                     [
-                        html.Div(APP_TITLE, className="brand-wordmark"),
+                        html.Div(
+                            [
+                                html.Img(
+                                    src= app.get_asset_url("PIM-PAM_Logo_Dark.png"),
+                                    alt="PIM-PAM logo",
+                                    className="brand-logo",
+                                ),
+                                html.Div(APP_TITLE, className="brand-wordmark"),
+                            ],
+                            className="brand-lockup",
+                        ),
                         html.Nav(
                             [
                                 html.A("Overview", href="#overview", className="nav-link"),

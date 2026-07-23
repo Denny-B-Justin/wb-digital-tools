@@ -86,6 +86,7 @@ TOOLS = [
             "PIA gives planners and policymakers an interactive way to explore infrastructure gaps on the ground",
         ],
         "accent": COLORS["accent_2"],
+        "logo": "pia_logo.png",
         "url": PIA_BASE_URL,
         "kind": "pia",  # special-cased in the workbench (has a country switcher)
     },
@@ -104,6 +105,7 @@ TOOLS = [
             "Offers real-time filtering, interactive dashboards, and downloadable project datasets to facilitate operational analysis and portfolio insights.",
         ],
         "accent": COLORS["accent_3"],
+        "logo": "goat_logo.png",
         "url": "https://datanalytics.worldbank.org/content/5e009cdd-7b07-4567-8f45-eb3a3f476abc/",
         "kind": "simple",
     },
@@ -125,6 +127,7 @@ TOOLS = [
             "Enables users to explore regional trends, benchmark countries against peers, and analyze country-level performance across multiple dimensions.",
         ],
         "accent": COLORS["accent_4"],
+        "logo": "cbd_logo.png",
         "url": "https://datanalytics.worldbank.org/content/4522077e-7857-468c-ab5a-366588a11dd0/",
         "kind": "simple",
     },
