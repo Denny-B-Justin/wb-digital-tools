@@ -275,7 +275,7 @@ def build_layout():
 
             html.Footer(
                 html.Div(
-                    "PIM-PAM Digital Workspace \u00b7 The World Bank", #\u00b7 Contact: ksingh12@worldbank.org
+                    "© PIM-PAM Digital Workspace \u00b7 The World Bank", #\u00b7 Contact: ksingh12@worldbank.org
                     className="footer-inner",
                 ),
                 className="footer",

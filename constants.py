@@ -87,7 +87,7 @@ TOOLS = [
         ],
         "accent": COLORS["accent_2"],
         "logo": "pia_logo.png",
-        "url": PIA_BASE_URL,
+        "url": "https://datanalytics.worldbank.org/public-infrastructure-access-tool/",#PIA_BASE_URL,
         "kind": "pia",  # special-cased in the workbench (has a country switcher)
     },
     {
